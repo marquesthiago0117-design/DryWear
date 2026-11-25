@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #D8C3A5;
+
+}
+
+header{
+    background-color: #754C32;
+    text-align: center;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+header a{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #B77B45;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+}
+
+header a:hover{
+        color: #3B2418;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header h1 {
+    margin: 0;
+    margin-right: auto;
+}
+
+nav{
+    background-color: #D8C3A5;
+}
+
+nav form{
+    background-color: white;
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 10px;
+    height: 750px;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.campo label{
+    width: 180px;
+    flex-shrink: 0;
+    font-family: "Black Ops One", system-ui;
+    color: #754C32;
+    font-size: 25px;
+
+}
+
+.campo input, .campo select{
+    flex: 1;
+    padding: 8px;
+}
+
+.cadastro{
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro button{
+    display: flex;
+    justify-content: center;
+    padding: 12px 40px;
+    background-color: #B77B45;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Black Ops One", system-ui;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cadastro button:hover {
+    color: #3B2418;
+}
+
+footer {
+    background-color: #754C32;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-family: "Black Ops One", system-ui;
+    font-size: 20px;
+}
+

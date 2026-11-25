@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    
+    <title>Cadastro</title>
+</head>
+
+<script>
+    function enviarCadastro(event){
+        event.preventDefault();
+        alert("Cadastro realizado!");
+        window.location.href = "index.html";
+    }
+
+</script>
+
+<body>
+        <header>
+            <h1>Inscrição</h1>
+            <a href="index.html">Início</a>
+        </header>
+
+    <nav>
+        <form action="/enviar" method="post" onsubmit="return enviarCadastro(event)">
+
+    
+        <div class = "campo">
+            <label for="input">Nome Completo: </label>
+            <input type="text" name="Nome" id="NomeUsuario" placeholder="Nome completo:">
+        </div>
+
+        <div class="campo">
+            <label for="input">Senha: </label>
+            <input type="password" name="senha" id="senhausuario" placeholder="Insira sua senha:">
+        </div>
+
+        <div class="campo">
+            <label for="input">Data de Nascimento: </label>
+            <input type="date" name="data" id="datanascimento">
+        </div>
+
+        <div class="campo">
+            <label for="genero">Gênero: </label>
+                <select name="genero" id="genero" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Femnino</option>
+                    <option value="outro">Outro</option>
+                </select>    
+        </div>
+        <div class="cadastro">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </nav>
+
+    </form>
+    
+</body>
+
+<footer>
+    <h2>© DryWear</h2>
+</footer>   
+
+</body>
+</html>
